@@ -9,9 +9,6 @@ function App() {
     if(loading) return <h1>Loading...</h1>
     if(error) return <h1>{`a a: ${error}`}</h1>
 
-    // console.log(products)
-
-
     return (
         <>
             <HomePage>
