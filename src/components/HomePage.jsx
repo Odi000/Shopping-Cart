@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import styles from "../css-modules/home-page.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -18,7 +18,8 @@ function HomePage() {
     return (
         <div className={styles.homePage}>
             <NavBar />
-            <Link to="/"><Button>Shop Now</Button></Link>
+            <Link to="store"><Button>Shop Now</Button></Link>
+            <Outlet context={products}/>
         </div>
     )
 }
