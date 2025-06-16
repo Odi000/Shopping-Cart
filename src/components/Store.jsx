@@ -1,24 +1,60 @@
-import { useOutletContext } from "react-router-dom"
+import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 import ProductContainer from "./ProductConteiner";
+import styles from "../css-modules/store.module.css";
 
-function Store({products}){
-    const props = useOutletContext();
+function SideBar({ products, selectedCategory, setSelectedCategory }) {
+    let categories = [];
 
-    let allProds = []
+    products.forEach(prod => {
+        if (categories.includes(prod.category)) return;
+        categories.push(prod.category)
+    })
 
-for(let prop in props){
-    allProds = [...allProds,...props[prop]]
+    function onClickCategory(category) {
+        setSelectedCategory(category);
+    }
+
+    return (
+        <div className={styles.sideBar}>
+            <h2>Categories</h2>
+            {categories.map(category => {
+                return (
+                    <div key={category} onClick={() => onClickCategory(category)}>
+                        <span className={category === selectedCategory ? styles.clicked : null}>
+                            <svg viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>
+                        </span>
+                        <p>{/home/i.test(category) ? category : category + "s"}</p>
+                    </div>)
+            })}
+        </div>
+    )
 }
 
-console.log(allProds)
+function Store() {
+    const [selectedCategory, setSelectedCategory] = useState(null)
+    const { products, error, loading } = useOutletContext();
 
-return (
-    <div>
-        {
-            allProds.map(prod=> <ProductContainer productData={prod}/>)
-        }
-    </div>
-)
+    if (loading) return <h1>Loading..</h1>
+
+    const filteredProducts = products.filter(prod => prod.category === selectedCategory);
+
+    return (
+        <div className={styles.container}>
+            {!loading &&
+                <SideBar
+                    products={products}
+                    selectedCategory={selectedCategory}
+                    setSelectedCategory={setSelectedCategory}
+                />}
+            <div className={styles.productsDisplayer}>
+                {selectedCategory ?
+                    filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} />) :
+                    products.map(prod => <ProductContainer key={prod.id} productData={prod} />)
+                }
+            </div>
+        </div>
+    )
 }
 
 export default Store

@@ -1,395 +1,439 @@
-{
-    "smartphones": [
-        {
-            "name": "jPhone 16 Pro",
-            "category": "Smartphone",
-            "price": 999,
-            "description": "The jPhone 16 Pro features a 6.3-inch Super Retina XDR display, A18 Pro chip, triple-camera system with advanced computational photography, and 5G connectivity. It offers all-day battery life and runs on iOS 18 with enhanced privacy features.",
-            "image": "/src/assets/smartphones/smartphone-3.png"
-        },
-        {
-            "name": "Samsang Galaxy S25",
-            "category": "Smartphone",
-            "price": 799,
-            "description": "The Galaxy S25 boasts a 6.2-inch Dynamic AMOLED display, Snapdragon 8 Gen 4 processor, and a versatile triple-lens camera. With 12GB RAM, 5G support, and a 4000mAh battery, it delivers smooth performance and vibrant visuals.",
-            "image": "/src/assets/smartphones/smartphone-1.png"
-        },
-        {
-            "name": "Googel Pixel 9",
-            "category": "Smartphone",
-            "price": 699,
-            "description": "Googel Pixel 9 features a 6.3-inch OLED display, Tensor G4 chip, and a dual-camera system excelling in low-light photography. It offers seamless Android 15 integration, AI-driven features, and a 4700mAh battery for all-day use.",
-            "image": "/src/assets/smartphones/smartphone-2.png"
-        },
-        {
-            "name": "OnePluz 13",
-            "category": "Smartphone",
-            "price": 899,
-            "description": "OnePluz 13 comes with a 6.8-inch AMOLED 120Hz display, Snapdragon 8 Gen 4, and a triple-camera setup. It supports 100W fast charging, has 12GB RAM, and runs OxygenOS for a smooth, customizable user experience.",
-            "image": "/src/assets/smartphones/smartphone-4.png"
-        },
-        {
-            "name": "Xiaomee 14",
-            "category": "Smartphone",
-            "price": 599,
-            "description": "Xiaomee 14 offers a 6.36-inch AMOLED display, Snapdragon 8 Gen 3, and a 50MP triple-camera system. With 8GB RAM, 4610mAh battery, and HyperOS, it provides excellent performance and value for money.",
-            "image": "/src/assets/smartphones/smartphone-5.png"
-        },
-        {
-            "name": "Realmee GT 5",
-            "category": "Smartphone",
-            "price": 499,
-            "description": "Realmee GT 5 features a 6.74-inch AMOLED 144Hz display, Dimensity 9200 processor, and a 50MP main camera. It supports 240W fast charging, has 12GB RAM, and delivers high performance for gaming and multitasking.",
-            "image": "/src/assets/smartphones/smartphone-6.png"
-        },
-        {
-            "name": "Soni Xperia 1 VI",
-            "category": "Smartphone",
-            "price": 1399,
-            "description": "Soni Xperia 1 VI sports a 6.5-inch 4K OLED display, Snapdragon 8 Gen 3, and a triple-camera with advanced manual controls. It offers 12GB RAM, 5G, and a 5000mAh battery for multimedia enthusiasts.",
-            "image": "/src/assets/smartphones/smartphone-7.png"
-        },
-        {
-            "name": "Motorolla Edge 50 Pro",
-            "category": "Smartphone",
-            "price": 549,
-            "description": "Motorolla Edge 50 Pro has a 6.67-inch OLED 144Hz display, Snapdragon 7 Gen 1, and a 50MP triple-camera. With 12GB RAM and 4400mAh battery with 125W charging, it balances performance and affordability.",
-            "image": "/src/assets/smartphones/smartphone-8.png"
-        },
-        {
-            "name": "Oppoo Find X7",
-            "category": "Smartphone",
-            "price": 799,
-            "description": "Oppoo Find X7 features a 6.78-inch AMOLED 120Hz display, Dimensity 9300 chip, and a 50MP quad-camera system. It includes 12GB RAM, 5000mAh battery, and 100W charging for a premium experience.",
-            "image": "/src/assets/smartphones/smartphone-9.png"
-        },
-        {
-            "name": "Veevo X100",
-            "category": "Smartphone",
-            "price": 649,
-            "description": "Veevo X100 offers a 6.78-inch AMOLED 120Hz display, Dimensity 9300, and a 50MP triple-camera with Zeiss optics. It has 12GB RAM, a 5000mAh battery, and supports 120W fast charging for robust performance.",
-            "image": "/src/assets/smartphones/smartphone-10.png"
-        }
-    ],
-    "monitors": [
-        {
-            "name": "Dall UltraSharp U2723QE",
-            "category": "Monitor",
-            "price": 579,
-            "description": "27-inch 4K UHD monitor with IPS panel, 98% DCI-P3 color coverage, and USB-C hub. Offers sharp visuals, wide viewing angles, and multitasking features for productivity.",
-            "image": "/src/assets/monitors/monitor-1.png"
-        },
-        {
-            "name": "Samsong Odyssey G7",
-            "category": "Monitor",
-            "price": 599,
-            "description": "32-inch QHD curved gaming monitor with 240Hz refresh rate, 1ms response time, and QLED technology. Delivers immersive visuals and smooth gameplay.",
-            "image": "/src/assets/monitors/monitor-2.png"
-        },
-        {
-            "name": "LGee 27GL83A-B",
-            "category": "Monitor",
-            "price": 349,
-            "description": "27-inch QHD IPS monitor with 144Hz refresh rate and NVIDIA G-Sync compatibility. Ideal for gaming and creative work with vibrant colors and low input lag.",
-            "image": "/src/assets/monitors/monitor-3.png"
-        },
-        {
-            "name": "A-SUS ProArt PA278CV",
-            "category": "Monitor",
-            "price": 369,
-            "description": "27-inch WQHD IPS monitor with 100% sRGB, Calman verified for color accuracy. Perfect for creative professionals needing precise visuals and USB-C connectivity.",
-            "image": "/src/assets/monitors/monitor-4.png"
-        },
-        {
-            "name": "Aser Nitro XV272U",
-            "category": "Monitor",
-            "price": 299,
-            "description": "27-inch QHD IPS gaming monitor with 165Hz refresh rate and 0.5ms response time. Offers vibrant colors and smooth performance for gamers on a budget.",
-            "image": "/src/assets/monitors/monitor-5.png"
-        },
-        {
-            "name": "BenQu PD3220U",
-            "category": "Monitor",
-            "price": 1099,
-            "description": "32-inch 4K UHD monitor with Thunderbolt 3, 95% DCI-P3, and HDR support. Designed for designers with accurate colors and versatile connectivity options.",
-            "image": "/src/assets/monitors/monitor-6.png"
-        },
-        {
-            "name": "Hewlett-Packar E27m G4",
-            "category": "Monitor",
-            "price": 419,
-            "description": "27-inch QHD IPS monitor with USB-C docking, webcam, and speakers. Ideal for office use with crisp visuals and productivity-enhancing features.",
-            "image": "/src/assets/monitors/monitor-7.png"
-        },
-        {
-            "name": "MSY Optix MAG274QRF-QD",
-            "category": "Monitor",
-            "price": 449,
-            "description": "27-inch WQHD gaming monitor with 165Hz refresh rate and quantum dot technology. Provides vivid colors and fast response for competitive gaming.",
-            "image": "/src/assets/monitors/monitor-8.png"
-        },
-        {
-            "name": "ViewSonnik VP2768",
-            "category": "Monitor",
-            "price": 529,
-            "description": "27-inch WQHD IPS monitor with 100% sRGB and hardware calibration. Tailored for photographers and editors needing precise color reproduction.",
-            "image": "/src/assets/monitors/monitor-9.png"
-        },
-        {
-            "name": "Lenava Q27q-20",
-            "category": "Monitor",
-            "price": 319,
-            "description": "27-inch QHD IPS monitor with 99% sRGB and slim bezels. Offers vibrant visuals and a sleek design for home office or entertainment use.",
-            "image": "/src/assets/monitors/monitor-10.png"
-        }
-    ],
-    "laptops": [
-        {
-            "name": "MacBook Flare M3",
-            "category": "Laptop",
-            "price": 1099,
-            "description": "13.6-inch laptop with M3 chip, 8GB RAM, and 256GB SSD. Lightweight design, Retina display, and up to 18 hours of battery life for efficient multitasking.",
-            "image": "/src/assets/laptops/laptop-1.png"
-        },
-        {
-            "name": "Dall XPS 13",
-            "category": "Laptop",
-            "price": 1299,
-            "description": "13.4-inch laptop with 11th Gen Intel Core i7, 16GB RAM, and 512GB SSD. Features a 4K UHD+ display and premium build for portability and performance.",
-            "image": "/src/assets/laptops/laptop-2.png"
-        },
-        {
-            "name": "Lenava ThinkPad X1 Carbon Gen 12",
-            "category": "Laptop",
-            "price": 1499,
-            "description": "14-inch laptop with Intel Core Ultra 7, 32GB RAM, and 1TB SSD. Lightweight, durable, and equipped with a 2.8K OLED display for business professionals.",
-            "image": "/src/assets/laptops/laptop-3.png"
-        },
-        {
-            "name": "Hewlett-Packar Spectre x360 14",
-            "category": "Laptop",
-            "price": 1399,
-            "description": "14-inch 2-in-1 laptop with Intel Core i7, 16GB RAM, and 1TB SSD. Features a 3K2K OLED touchscreen and 360-degree hinge for versatile use.",
-            "image": "/src/assets/laptops/laptop-4.png"
-        },
-        {
-            "name": "A-SUS ROG Zephyrus G14",
-            "category": "Laptop",
-            "price": 1599,
-            "description": "14-inch gaming laptop with AMD Ryzen 9, 16GB RAM, and RTX 4060 GPU. Compact design with QHD 120Hz display for gaming and creative tasks.",
-            "image": "/src/assets/laptops/laptop-5.png"
-        },
-        {
-            "name": "Aser Aspire 5",
-            "category": "Laptop",
-            "price": 549,
-            "description": "15.6-inch laptop with AMD Ryzen 5, 8GB RAM, and 512GB SSD. Offers solid performance and a Full HD display for budget-conscious users.",
-            "image": "/src/assets/laptops/laptop-6.png"
-        },
-        {
-            "name": "Microhard Surface Laptop 6",
-            "category": "Laptop",
-            "price": 1199,
-            "description": "13.5-inch laptop with Snapdragon X Elite, 16GB RAM, and 512GB SSD. Features a PixelSense touchscreen and sleek design for productivity and portability.",
-            "image": "/src/assets/laptops/laptop-7.png"
-        },
-        {
-            "name": "Razer Blayde 16",
-            "category": "Laptop",
-            "price": 2699,
-            "description": "16-inch gaming laptop with Intel Core i9, 32GB RAM, and RTX 4080 GPU. Boasts a 4K Mini-LED display with 240Hz refresh for premium gaming.",
-            "image": "/src/assets/laptops/laptop-8.png"
-        },
-        {
-            "name": "LGee Gram 17",
-            "category": "Laptop",
-            "price": 1399,
-            "description": "17-inch laptop with Intel Core i7, 16GB RAM, and 1TB SSD. Ultra-lightweight with a WQXGA display, ideal for professionals needing a large screen.",
-            "image": "/src/assets/laptops/laptop-9.png"
-        },
-        {
-            "name": "Samsong Galaxy Book 4 Pro",
-            "category": "Laptop",
-            "price": 1449,
-            "description": "14-inch laptop with Intel Core Ultra 7, 16GB RAM, and 512GB SSD. Features an AMOLED 3K display and lightweight design for premium productivity.",
-            "image": "/src/assets/laptops/laptop-10.png"
-        }
-    ],
-    "homeAppliances": [
-        {
-            "name": "LGee WT7150CW",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 649,
-            "description": "4.5 cu. ft. top-load washer with high-efficiency agitator and TurboWash technology. Offers excellent cleaning, energy efficiency, and low vibration with a 70-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-1.png"
-        },
-        {
-            "name": "Samsong WF45B6300AW",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 799,
-            "description": "4.5 cu. ft. front-load washer with AddWash door and smart controls. Provides superior cleaning, steam cycles, and energy efficiency with a 45-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-2.png"
-        },
-        {
-            "name": "ElectraLux ELFW7637AT",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 999,
-            "description": "4.5 cu. ft. front-load washer with LuxCare Wash System and steam cleaning. Delivers excellent performance and fabric care with a 65-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-3.png"
-        },
-        {
-            "name": "GEe GFW550SSNWW",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 849,
-            "description": "4.8 cu. ft. front-load washer with UltraFresh Vent System and smart features. Offers strong cleaning performance and odor prevention with a 60-minute cycle.",
-            "image": "/src/assets/home-appliances/washing-machine-4.png"
-        },
-        {
-            "name": "Whirlpull WFW560CHW",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 899,
-            "description": "4.3 cu. ft. front-load washer with Load & Go dispenser and steam cleaning. Provides efficient washing and fabric care with a 55-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-5.png"
-        },
-        {
-            "name": "Speed Queen TR7",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 1299,
-            "description": "3.2 cu. ft. top-load washer with commercial-grade durability. Offers robust cleaning, simple controls, and a 3-year warranty with a 60-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-6.png"
-        },
-        {
-            "name": "Mayteg MVW7232HW",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 799,
-            "description": "5.3 cu. ft. top-load washer with Deep Fill option and Power agitator. Delivers powerful cleaning and large capacity with a 70-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-7.png"
-        },
-        {
-            "name": "LGee WM4000HWA",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 849,
-            "description": "4.5 cu. ft. front-load washer with TurboWash 360 and AI-driven cycles. Offers fast, efficient cleaning and smart features with a 45-minute cycle time.",
-            "image": "/src/assets/home-appliances/washing-machine-8.png"
-        },
-        {
-            "name": "Bausch WAW285H2UC",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 1499,
-            "description": "2.2 cu. ft. compact front-load washer with EcoSilence motor and Home Connect. Ideal for small spaces with quiet, efficient performance and a 60-minute cycle.",
-            "image": "/src/assets/home-appliances/washing-machine-9.png"
-        },
-        {
-            "name": "Amanah NTW4516FW",
-            "category": "Home appliances",
-            "subCategory": "Washing Machine",
-            "price": 529,
-            "description": "3.5 cu. ft. top-load washer with dual-action agitator. Budget-friendly with reliable cleaning performance and a 65-minute cycle time for everyday laundry needs.",
-            "image": "/src/assets/home-appliances/washing-machine-10.png"
-        },
-        {
-            "name": "GEe Toaster Oven G9OAAASSPSS",
-            "category": "Home appliances",
-            "subCategory": "Mini Stove",
-            "price": 149,
-            "description": "Compact toaster oven with air fry, bake, and broil functions. Fits small spaces with a 0.7 cu. ft. capacity and easy-to-use digital controls.",
-            "image": "/src/assets/home-appliances/mini-stove-1.png"
-        },
-        {
-            "name": "BlackDeck TO3250XSB",
-            "category": "Home appliances",
-            "subCategory": "Mini Stove",
-            "price": 99,
-            "description": "Toaster oven with convection baking and air fry capabilities. Compact design with 0.6 cu. ft. capacity, ideal for small kitchens or dorms.",
-            "image": "/src/assets/home-appliances/mini-stove-2.png"
-        },
-        {
-            "name": "Ninjar Foodi DT251",
-            "category": "Home appliances",
-            "subCategory": "Mini Stove",
-            "price": 229,
-            "description": "Digital air fry oven with 10 cooking functions, including bake and dehydrate. Compact with a 0.8 cu. ft. capacity for versatile small-space cooking.",
-            "image": "/src/assets/home-appliances/mini-stove-3.png"
-        },
-        {
-            "name": "LGee LREL6321S",
-            "category": "Home appliances",
-            "subCategory": "Stove",
-            "price": 649,
-            "description": "30-inch electric range with 6.3 cu. ft. oven, two high-powered burners, and even baking. Reliable performance with a warming element for everyday cooking.",
-            "image": "/src/assets/home-appliances/stove-1.png"
-        },
-        {
-            "name": "Samsong NE63A6511SS",
-            "category": "Home appliances",
-            "subCategory": "Stove",
-            "price": 899,
-            "description": "30-inch electric range with 6.3 cu. ft. oven, air fry, and Wi-Fi connectivity. Offers fast heating and versatile cooking modes for modern kitchens.",
-            "image": "/src/assets/home-appliances/stove-2.png"
-        },
-        {
-            "name": "GEe Profile PGS930YPFS",
-            "category": "Home appliances",
-            "subCategory": "Stove",
-            "price": 1299,
-            "description": "30-inch gas slide-in range with 5.6 cu. ft. oven and convection. Delivers fast heating, steady simmering, and reliable performance for home chefs.",
-            "image": "/src/assets/home-appliances/stove-3.png"
-        },
-        {
-            "name": "Sun Jow SPX3000",
-            "category": "Home appliances",
-            "subCategory": "Power Washer",
-            "price": 169,
-            "description": "Electric pressure washer with 2030 PSI and 1.76 GPM. Lightweight and versatile for cleaning driveways, vehicles, and patios with five quick-connect nozzles.",
-            "image": "/src/assets/home-appliances/power-washer-1.png"
-        },
-        {
-            "name": "Karchir K1700",
-            "category": "Home appliances",
-            "subCategory": "Power Washer",
-            "price": 199,
-            "description": "Electric pressure washer with 1700 PSI and 1.2 GPM. Compact design with three nozzles, ideal for light to medium cleaning tasks around the home.",
-            "image": "/src/assets/home-appliances/power-washer-2.png"
-        },
-        {
-            "name": "Simpsun Cleaning MSH3125",
-            "category": "Home appliances",
-            "subCategory": "Power Washer",
-            "price": 349,
-            "description": "Gas-powered pressure washer with 3100 PSI and 2.5 GPM. Built for heavy-duty cleaning of decks, fences, and concrete surfaces with durable components.",
-            "image": "/src/assets/home-appliances/power-washer-3.png"
-        },
-        {
-            "name": "Conayr GS59X",
-            "category": "Home appliances",
-            "subCategory": "Steamer",
-            "price": 49,
-            "description": "Handheld garment steamer with 16.62 grams/minute steam output. Lightweight and compact, ideal for travel and quick wrinkle removal on various fabrics.",
-            "image": "/src/assets/home-appliances/steamer.png"
-        },
-        {
-            "name": "Mop and Bucket",
-            "category": "Home Appliances",
-            "price": 12,
-            "description": "Spin mop with bucket and foot pedal for hands-free wringing. Lightweight and effective for cleaning hardwood, tile, and laminate floors with ease.",
-            "image": "/src/assets/home-appliances/mop.png"
-        },
-        {
-            "name": "Panasoniq NN-SN752S",
-            "category": "Home appliances",
-            "subCategory": "Microwave",
-            "price": 249,
-            "description": "1.6 cu. ft. countertop microwave with inverter technology and sensor cooking. Compact yet powerful, with quiet operation and even heating for daily use.",
-            "image": "/src/assets/home-appliances/microwave.png"
-        }
-    ]
-}
+[
+    {
+        "id": "100",
+        "name": "jPhone 16 Pro",
+        "category": "Smartphone",
+        "price": 999,
+        "description": "The jPhone 16 Pro features a 6.3-inch Super Retina XDR display, A18 Pro chip, triple-camera system with advanced computational photography, and 5G connectivity. It offers all-day battery life and runs on iOS 18 with enhanced privacy features.",
+        "image": "/src/assets/smartphones/smartphone-3.png"
+    },
+    {
+        "id": "101",
+        "name": "Samsang Galaxy S25",
+        "category": "Smartphone",
+        "price": 799,
+        "description": "The Galaxy S25 boasts a 6.2-inch Dynamic AMOLED display, Snapdragon 8 Gen 4 processor, and a versatile triple-lens camera. With 12GB RAM, 5G support, and a 4000mAh battery, it delivers smooth performance and vibrant visuals.",
+        "image": "/src/assets/smartphones/smartphone-1.png"
+    },
+    {
+        "id": "102",
+        "name": "Googel Pixel 9",
+        "category": "Smartphone",
+        "price": 699,
+        "description": "Googel Pixel 9 features a 6.3-inch OLED display, Tensor G4 chip, and a dual-camera system excelling in low-light photography. It offers seamless Android 15 integration, AI-driven features, and a 4700mAh battery for all-day use.",
+        "image": "/src/assets/smartphones/smartphone-2.png"
+    },
+    {
+        "id": "103",
+        "name": "OnePluz 13",
+        "category": "Smartphone",
+        "price": 899,
+        "description": "OnePluz 13 comes with a 6.8-inch AMOLED 120Hz display, Snapdragon 8 Gen 4, and a triple-camera setup. It supports 100W fast charging, has 12GB RAM, and runs OxygenOS for a smooth, customizable user experience.",
+        "image": "/src/assets/smartphones/smartphone-4.png"
+    },
+    {
+        "id": "104",
+        "name": "Xiaomee 14",
+        "category": "Smartphone",
+        "price": 599,
+        "description": "Xiaomee 14 offers a 6.36-inch AMOLED display, Snapdragon 8 Gen 3, and a 50MP triple-camera system. With 8GB RAM, 4610mAh battery, and HyperOS, it provides excellent performance and value for money.",
+        "image": "/src/assets/smartphones/smartphone-5.png"
+    },
+    {
+        "id": "105",
+        "name": "Realmee GT 5",
+        "category": "Smartphone",
+        "price": 499,
+        "description": "Realmee GT 5 features a 6.74-inch AMOLED 144Hz display, Dimensity 9200 processor, and a 50MP main camera. It supports 240W fast charging, has 12GB RAM, and delivers high performance for gaming and multitasking.",
+        "image": "/src/assets/smartphones/smartphone-6.png"
+    },
+    {
+        "id": "106",
+        "name": "Soni Xperia 1 VI",
+        "category": "Smartphone",
+        "price": 1399,
+        "description": "Soni Xperia 1 VI sports a 6.5-inch 4K OLED display, Snapdragon 8 Gen 3, and a triple-camera with advanced manual controls. It offers 12GB RAM, 5G, and a 5000mAh battery for multimedia enthusiasts.",
+        "image": "/src/assets/smartphones/smartphone-7.png"
+    },
+    {
+        "id": "107",
+        "name": "Motorolla Edge 50 Pro",
+        "category": "Smartphone",
+        "price": 549,
+        "description": "Motorolla Edge 50 Pro has a 6.67-inch OLED 144Hz display, Snapdragon 7 Gen 1, and a 50MP triple-camera. With 12GB RAM and 4400mAh battery with 125W charging, it balances performance and affordability.",
+        "image": "/src/assets/smartphones/smartphone-8.png"
+    },
+    {
+        "id": "108",
+        "name": "Oppoo Find X7",
+        "category": "Smartphone",
+        "price": 799,
+        "description": "Oppoo Find X7 features a 6.78-inch AMOLED 120Hz display, Dimensity 9300 chip, and a 50MP quad-camera system. It includes 12GB RAM, 5000mAh battery, and 100W charging for a premium experience.",
+        "image": "/src/assets/smartphones/smartphone-9.png"
+    },
+    {
+        "id": "109",
+        "name": "Veevo X100",
+        "category": "Smartphone",
+        "price": 649,
+        "description": "Veevo X100 offers a 6.78-inch AMOLED 120Hz display, Dimensity 9300, and a 50MP triple-camera with Zeiss optics. It has 12GB RAM, a 5000mAh battery, and supports 120W fast charging for robust performance.",
+        "image": "/src/assets/smartphones/smartphone-10.png"
+    },
+    {
+        "id": "110",
+        "name": "Dall UltraSharp U2723QE",
+        "category": "Monitor",
+        "price": 579,
+        "description": "27-inch 4K UHD monitor with IPS panel, 98% DCI-P3 color coverage, and USB-C hub. Offers sharp visuals, wide viewing angles, and multitasking features for productivity.",
+        "image": "/src/assets/monitors/monitor-1.png"
+    },
+    {
+        "id": "111",
+        "name": "Samsong Odyssey G7",
+        "category": "Monitor",
+        "price": 599,
+        "description": "32-inch QHD curved gaming monitor with 240Hz refresh rate, 1ms response time, and QLED technology. Delivers immersive visuals and smooth gameplay.",
+        "image": "/src/assets/monitors/monitor-2.png"
+    },
+    {
+        "id": "112",
+        "name": "LGee 27GL83A-B",
+        "category": "Monitor",
+        "price": 349,
+        "description": "27-inch QHD IPS monitor with 144Hz refresh rate and NVIDIA G-Sync compatibility. Ideal for gaming and creative work with vibrant colors and low input lag.",
+        "image": "/src/assets/monitors/monitor-3.png"
+    },
+    {
+        "id": "113",
+        "name": "A-SUS ProArt PA278CV",
+        "category": "Monitor",
+        "price": 369,
+        "description": "27-inch WQHD IPS monitor with 100% sRGB, Calman verified for color accuracy. Perfect for creative professionals needing precise visuals and USB-C connectivity.",
+        "image": "/src/assets/monitors/monitor-4.png"
+    },
+    {
+        "id": "114",
+        "name": "Aser Nitro XV272U",
+        "category": "Monitor",
+        "price": 299,
+        "description": "27-inch QHD IPS gaming monitor with 165Hz refresh rate and 0.5ms response time. Offers vibrant colors and smooth performance for gamers on a budget.",
+        "image": "/src/assets/monitors/monitor-5.png"
+    },
+    {
+        "id": "115",
+        "name": "BenQu PD3220U",
+        "category": "Monitor",
+        "price": 1099,
+        "description": "32-inch 4K UHD monitor with Thunderbolt 3, 95% DCI-P3, and HDR support. Designed for designers with accurate colors and versatile connectivity options.",
+        "image": "/src/assets/monitors/monitor-6.png"
+    },
+    {
+        "id": "116",
+        "name": "Hewlett-Packar E27m G4",
+        "category": "Monitor",
+        "price": 419,
+        "description": "27-inch QHD IPS monitor with USB-C docking, webcam, and speakers. Ideal for office use with crisp visuals and productivity-enhancing features.",
+        "image": "/src/assets/monitors/monitor-7.png"
+    },
+    {
+        "id": "117",
+        "name": "MSY Optix MAG274QRF-QD",
+        "category": "Monitor",
+        "price": 449,
+        "description": "27-inch WQHD gaming monitor with 165Hz refresh rate and quantum dot technology. Provides vivid colors and fast response for competitive gaming.",
+        "image": "/src/assets/monitors/monitor-8.png"
+    },
+    {
+        "id": "118",
+        "name": "ViewSonnik VP2768",
+        "category": "Monitor",
+        "price": 529,
+        "description": "27-inch WQHD IPS monitor with 100% sRGB and hardware calibration. Tailored for photographers and editors needing precise color reproduction.",
+        "image": "/src/assets/monitors/monitor-9.png"
+    },
+    {
+        "id": "119",
+        "name": "Lenava Q27q-20",
+        "category": "Monitor",
+        "price": 319,
+        "description": "27-inch QHD IPS monitor with 99% sRGB and slim bezels. Offers vibrant visuals and a sleek design for home office or entertainment use.",
+        "image": "/src/assets/monitors/monitor-10.png"
+    },
+    {
+        "id": "120",
+        "name": "MacBook Flare M3",
+        "category": "Laptop",
+        "price": 1099,
+        "description": "13.6-inch laptop with M3 chip, 8GB RAM, and 256GB SSD. Lightweight design, Retina display, and up to 18 hours of battery life for efficient multitasking.",
+        "image": "/src/assets/laptops/laptop-1.png"
+    },
+    {
+        "id": "121",
+        "name": "Dall XPS 13",
+        "category": "Laptop",
+        "price": 1299,
+        "description": "13.4-inch laptop with 11th Gen Intel Core i7, 16GB RAM, and 512GB SSD. Features a 4K UHD+ display and premium build for portability and performance.",
+        "image": "/src/assets/laptops/laptop-2.png"
+    },
+    {
+        "id": "122",
+        "name": "Lenava ThinkPad X1 Carbon Gen 12",
+        "category": "Laptop",
+        "price": 1499,
+        "description": "14-inch laptop with Intel Core Ultra 7, 32GB RAM, and 1TB SSD. Lightweight, durable, and equipped with a 2.8K OLED display for business professionals.",
+        "image": "/src/assets/laptops/laptop-3.png"
+    },
+    {
+        "id": "123",
+        "name": "Hewlett-Packar Spectre x360 14",
+        "category": "Laptop",
+        "price": 1399,
+        "description": "14-inch 2-in-1 laptop with Intel Core i7, 16GB RAM, and 1TB SSD. Features a 3K2K OLED touchscreen and 360-degree hinge for versatile use.",
+        "image": "/src/assets/laptops/laptop-4.png"
+    },
+    {
+        "id": "124",
+        "name": "A-SUS ROG Zephyrus G14",
+        "category": "Laptop",
+        "price": 1599,
+        "description": "14-inch gaming laptop with AMD Ryzen 9, 16GB RAM, and RTX 4060 GPU. Compact design with QHD 120Hz display for gaming and creative tasks.",
+        "image": "/src/assets/laptops/laptop-5.png"
+    },
+    {
+        "id": "125",
+        "name": "Aser Aspire 5",
+        "category": "Laptop",
+        "price": 549,
+        "description": "15.6-inch laptop with AMD Ryzen 5, 8GB RAM, and 512GB SSD. Offers solid performance and a Full HD display for budget-conscious users.",
+        "image": "/src/assets/laptops/laptop-6.png"
+    },
+    {
+        "id": "126",
+        "name": "Microhard Surface Laptop 6",
+        "category": "Laptop",
+        "price": 1199,
+        "description": "13.5-inch laptop with Snapdragon X Elite, 16GB RAM, and 512GB SSD. Features a PixelSense touchscreen and sleek design for productivity and portability.",
+        "image": "/src/assets/laptops/laptop-7.png"
+    },
+    {
+        "id": "127",
+        "name": "Razer Blayde 16",
+        "category": "Laptop",
+        "price": 2699,
+        "description": "16-inch gaming laptop with Intel Core i9, 32GB RAM, and RTX 4080 GPU. Boasts a 4K Mini-LED display with 240Hz refresh for premium gaming.",
+        "image": "/src/assets/laptops/laptop-8.png"
+    },
+    {
+        "id": "128",
+        "name": "LGee Gram 17",
+        "category": "Laptop",
+        "price": 1399,
+        "description": "17-inch laptop with Intel Core i7, 16GB RAM, and 1TB SSD. Ultra-lightweight with a WQXGA display, ideal for professionals needing a large screen.",
+        "image": "/src/assets/laptops/laptop-9.png"
+    },
+    {
+        "id": "129",
+        "name": "Samsong Galaxy Book 4 Pro",
+        "category": "Laptop",
+        "price": 1449,
+        "description": "14-inch laptop with Intel Core Ultra 7, 16GB RAM, and 512GB SSD. Features an AMOLED 3K display and lightweight design for premium productivity.",
+        "image": "/src/assets/laptops/laptop-10.png"
+    },
+    {
+        "id": "132",
+        "name": "ElectraLux ELFW7637AT",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 999,
+        "description": "4.5 cu. ft. front-load washer with LuxCare Wash System and steam cleaning. Delivers excellent performance and fabric care with a 65-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-3.png"
+    },
+    {
+        "id": "130",
+        "name": "LGee WT7150CW",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 649,
+        "description": "4.5 cu. ft. top-load washer with high-efficiency agitator and TurboWash technology. Offers excellent cleaning, energy efficiency, and low vibration with a 70-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-1.png"
+    },
+    {
+        "id": "131",
+        "name": "Samsong WF45B6300AW",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 799,
+        "description": "4.5 cu. ft. front-load washer with AddWash door and smart controls. Provides superior cleaning, steam cycles, and energy efficiency with a 45-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-2.png"
+    },
+    {
+        "id": "133",
+        "name": "GEe GFW550SSNWW",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 849,
+        "description": "4.8 cu. ft. front-load washer with UltraFresh Vent System and smart features. Offers strong cleaning performance and odor prevention with a 60-minute cycle.",
+        "image": "/src/assets/home-appliances/washing-machine-4.png"
+    },
+    {
+        "id": "134",
+        "name": "Whirlpull WFW560CHW",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 899,
+        "description": "4.3 cu. ft. front-load washer with Load & Go dispenser and steam cleaning. Provides efficient washing and fabric care with a 55-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-5.png"
+    },
+    {
+        "id": "135",
+        "name": "Speed Queen TR7",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 1299,
+        "description": "3.2 cu. ft. top-load washer with commercial-grade durability. Offers robust cleaning, simple controls, and a 3-year warranty with a 60-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-6.png"
+    },
+    {
+        "id": "136",
+        "name": "Mayteg MVW7232HW",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 799,
+        "description": "5.3 cu. ft. top-load washer with Deep Fill option and Power agitator. Delivers powerful cleaning and large capacity with a 70-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-7.png"
+    },
+    {
+        "id": "137",
+        "name": "LGee WM4000HWA",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 849,
+        "description": "4.5 cu. ft. front-load washer with TurboWash 360 and AI-driven cycles. Offers fast, efficient cleaning and smart features with a 45-minute cycle time.",
+        "image": "/src/assets/home-appliances/washing-machine-8.png"
+    },
+    {
+        "id": "138",
+        "name": "Bausch WAW285H2UC",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 1499,
+        "description": "2.2 cu. ft. compact front-load washer with EcoSilence motor and Home Connect. Ideal for small spaces with quiet, efficient performance and a 60-minute cycle.",
+        "image": "/src/assets/home-appliances/washing-machine-9.png"
+    },
+    {
+        "id": "139",
+        "name": "Amanah NTW4516FW",
+        "category": "Home appliances",
+        "subCategory": "Washing Machine",
+        "price": 529,
+        "description": "3.5 cu. ft. top-load washer with dual-action agitator. Budget-friendly with reliable cleaning performance and a 65-minute cycle time for everyday laundry needs.",
+        "image": "/src/assets/home-appliances/washing-machine-10.png"
+    },
+    {
+        "id": "140",
+        "name": "GEe Toaster Oven G9OAAASSPSS",
+        "category": "Home appliances",
+        "subCategory": "Mini Stove",
+        "price": 149,
+        "description": "Compact toaster oven with air fry, bake, and broil functions. Fits small spaces with a 0.7 cu. ft. capacity and easy-to-use digital controls.",
+        "image": "/src/assets/home-appliances/mini-stove-1.png"
+    },
+    {
+        "id": "141",
+        "name": "BlackDeck TO3250XSB",
+        "category": "Home appliances",
+        "subCategory": "Mini Stove",
+        "price": 99,
+        "description": "Toaster oven with convection baking and air fry capabilities. Compact design with 0.6 cu. ft. capacity, ideal for small kitchens or dorms.",
+        "image": "/src/assets/home-appliances/mini-stove-2.png"
+    },
+    {
+        "id": "142",
+        "name": "Ninjar Foodi DT251",
+        "category": "Home appliances",
+        "subCategory": "Mini Stove",
+        "price": 229,
+        "description": "Digital air fry oven with 10 cooking functions, including bake and dehydrate. Compact with a 0.8 cu. ft. capacity for versatile small-space cooking.",
+        "image": "/src/assets/home-appliances/mini-stove-3.png"
+    },
+    {
+        "id": "143",
+        "name": "LGee LREL6321S",
+        "category": "Home appliances",
+        "subCategory": "Stove",
+        "price": 649,
+        "description": "30-inch electric range with 6.3 cu. ft. oven, two high-powered burners, and even baking. Reliable performance with a warming element for everyday cooking.",
+        "image": "/src/assets/home-appliances/stove-1.png"
+    },
+    {
+        "id": "144",
+        "name": "Samsong NE63A6511SS",
+        "category": "Home appliances",
+        "subCategory": "Stove",
+        "price": 899,
+        "description": "30-inch electric range with 6.3 cu. ft. oven, air fry, and Wi-Fi connectivity. Offers fast heating and versatile cooking modes for modern kitchens.",
+        "image": "/src/assets/home-appliances/stove-2.png"
+    },
+    {
+        "id": "145",
+        "name": "GEe Profile PGS930YPFS",
+        "category": "Home appliances",
+        "subCategory": "Stove",
+        "price": 1299,
+        "description": "30-inch gas slide-in range with 5.6 cu. ft. oven and convection. Delivers fast heating, steady simmering, and reliable performance for home chefs.",
+        "image": "/src/assets/home-appliances/stove-3.png"
+    },
+    {
+        "id": "146",
+        "name": "Sun Jow SPX3000",
+        "category": "Home appliances",
+        "subCategory": "Power Washer",
+        "price": 169,
+        "description": "Electric pressure washer with 2030 PSI and 1.76 GPM. Lightweight and versatile for cleaning driveways, vehicles, and patios with five quick-connect nozzles.",
+        "image": "/src/assets/home-appliances/power-washer-1.png"
+    },
+    {
+        "id": "147",
+        "name": "Karchir K1700",
+        "category": "Home appliances",
+        "subCategory": "Power Washer",
+        "price": 199,
+        "description": "Electric pressure washer with 1700 PSI and 1.2 GPM. Compact design with three nozzles, ideal for light to medium cleaning tasks around the home.",
+        "image": "/src/assets/home-appliances/power-washer-2.png"
+    },
+    {
+        "id": "148",
+        "name": "Simpsun Cleaning MSH3125",
+        "category": "Home appliances",
+        "subCategory": "Power Washer",
+        "price": 349,
+        "description": "Gas-powered pressure washer with 3100 PSI and 2.5 GPM. Built for heavy-duty cleaning of decks, fences, and concrete surfaces with durable components.",
+        "image": "/src/assets/home-appliances/power-washer-3.png"
+    },
+    {
+        "id": "149",
+        "name": "Conayr GS59X",
+        "category": "Home appliances",
+        "subCategory": "Steamer",
+        "price": 49,
+        "description": "Handheld garment steamer with 16.62 grams/minute steam output. Lightweight and compact, ideal for travel and quick wrinkle removal on various fabrics.",
+        "image": "/src/assets/home-appliances/steamer.png"
+    },
+    {
+        "id": "150",
+        "name": "Mop and Bucket",
+        "category": "Home appliances",
+        "price": 12,
+        "description": "Spin mop with bucket and foot pedal for hands-free wringing. Lightweight and effective for cleaning hardwood, tile, and laminate floors with ease.",
+        "image": "/src/assets/home-appliances/mop.png"
+    },
+    {
+        "id": "151",
+        "name": "Panasoniq NN-SN752S",
+        "category": "Home appliances",
+        "subCategory": "Microwave",
+        "price": 249,
+        "description": "1.6 cu. ft. countertop microwave with inverter technology and sensor cooking. Compact yet powerful, with quiet operation and even heating for daily use.",
+        "image": "/src/assets/home-appliances/microwave.png"
+    }
+]

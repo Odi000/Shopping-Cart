@@ -2,12 +2,14 @@
 *::before,
 ::after {
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
-    --color-gray: rgb(245, 245, 245, 1);
+    --color-gray: #ebebeb;
+    --color-gray-light: #d4d4d4;
     --color-gray-2: #a3a3a3;
     --color-blue: #9dd4ff;
 }

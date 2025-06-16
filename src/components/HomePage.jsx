@@ -19,7 +19,7 @@ function HomePage() {
         <div className={styles.homePage}>
             <NavBar />
             <Link to="store"><Button>Shop Now</Button></Link>
-            <Outlet context={products}/>
+            <Outlet context={{products, error, loading}}/>
         </div>
     )
 }
