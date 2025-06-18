@@ -1,5 +1,66 @@
 .navBar {
-    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    padding: 1.4rem 5.4rem;
+    z-index: 1;
+    width: 100vw;
+    backdrop-filter: blur(24px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    font-size: 1.8rem;
+}
+
+.left>div {
+    display: flex;
+    gap: 2rem;
+}
+
+.left>img {
+    width: 15rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.heartNCart {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.heart,
+.cart {
+    position: relative;
+}
+
+.heart svg {
+    width: 3rem;
+    height: auto;
+}
+
+.cart svg {
+    width: 3.6rem;
+    height: auto;
+}
+
+.heartNCart p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cart p {
+    top: 55%;
 }

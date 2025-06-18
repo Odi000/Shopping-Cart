@@ -14,11 +14,12 @@
 .container {
     display: grid;
     grid-template-columns: 17rem 1fr;
+    padding: 5.6rem 5.4rem 0;
 }
 
 .sideBar {
     font-size: 1.6rem;
-    padding-left: .8rem; /*fshije ma von po deshe*/
+    /* padding-left: 5.4rem; fshije ma von po deshe */
 }
 
 .sideBar h2 {

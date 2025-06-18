@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function SearchBar() {
     return (
-        <div>
-            <input type="text" placeholder="Search" />
+        <div className="searchBar">
             <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+            <input type="text" placeholder="Search" />
         </div>
     )
 }

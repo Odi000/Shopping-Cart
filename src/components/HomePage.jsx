@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import styles from "../css-modules/home-page.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -13,13 +13,17 @@ import { getFetchRequest } from "../functions.js/fetchRequest";
 library.add(fas, far, fab)
 
 function HomePage() {
+    const [cart, setCart] = useState([]);
     const { products, error, loading } = useProducts();
+    const loaction = useLocation();
+
+    console.log(cart)
 
     return (
         <div className={styles.homePage}>
-            <NavBar />
-            <Link to="store"><Button>Shop Now</Button></Link>
-            <Outlet context={{products, error, loading}}/>
+            <NavBar cart={cart}/>
+            {loaction.pathname !== "/" || <Link to="store"><Button>Shop Now</Button></Link>}
+            <Outlet context={{ products, error, loading, setCart }} />
         </div>
     )
 }

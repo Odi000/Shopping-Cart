@@ -12,7 +12,10 @@ function SideBar({ products, selectedCategory, setSelectedCategory }) {
     })
 
     function onClickCategory(category) {
-        setSelectedCategory(category);
+        setSelectedCategory(selectedCategory => {
+            if (selectedCategory === category) return null;
+            return category;
+        });
     }
 
     return (
@@ -33,7 +36,7 @@ function SideBar({ products, selectedCategory, setSelectedCategory }) {
 
 function Store() {
     const [selectedCategory, setSelectedCategory] = useState(null)
-    const { products, error, loading } = useOutletContext();
+    const { products, error, loading, setCart } = useOutletContext();
 
     if (loading) return <h1>Loading..</h1>
 
@@ -49,8 +52,8 @@ function Store() {
                 />}
             <div className={styles.productsDisplayer}>
                 {selectedCategory ?
-                    filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} />) :
-                    products.map(prod => <ProductContainer key={prod.id} productData={prod} />)
+                    filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />) :
+                    products.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />)
                 }
             </div>
         </div>
