@@ -23,7 +23,7 @@ function HomePage() {
         <div className={styles.homePage}>
             <NavBar cart={cart}/>
             {loaction.pathname !== "/" || <Link to="store"><Button>Shop Now</Button></Link>}
-            <Outlet context={{ products, error, loading, setCart }} />
+            <Outlet context={{ products, error, loading,cart, setCart }} />
         </div>
     )
 }

@@ -1,8 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: 17rem 1fr;
+    padding: 5.6rem 5.4rem 0;
+}
+
+.container>div:last-child {
+    padding: 0 2rem;
+}
+
+.container>div:last-child>h2,
+.sideBar h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1.6rem;
+
+}
+
 .productsDisplayer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.8rem;
-    padding: 0 2rem;
 }
 
 @media (max-width: 1050px) {
@@ -11,19 +27,8 @@
     }
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 17rem 1fr;
-    padding: 5.6rem 5.4rem 0;
-}
-
 .sideBar {
-    font-size: 1.6rem;
-    /* padding-left: 5.4rem; fshije ma von po deshe */
-}
-
-.sideBar h2 {
-    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .sideBar>div {

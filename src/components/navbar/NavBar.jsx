@@ -20,7 +20,7 @@ function NavBar({cart}) {
                     <Link className={styles.heart}>
                         <FavoutiesIcon favoutiesTotal={15}></FavoutiesIcon>
                     </Link>
-                    <Link className={styles.cart}>
+                    <Link to={"cart"} className={styles.cart}>
                         <ShoppingCartIcon shoppingCartTotal={cart.length}></ShoppingCartIcon>
                     </Link>
                 </div>

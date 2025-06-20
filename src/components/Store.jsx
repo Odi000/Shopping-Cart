@@ -44,17 +44,19 @@ function Store() {
 
     return (
         <div className={styles.container}>
-            {!loading &&
-                <SideBar
-                    products={products}
-                    selectedCategory={selectedCategory}
-                    setSelectedCategory={setSelectedCategory}
-                />}
-            <div className={styles.productsDisplayer}>
-                {selectedCategory ?
-                    filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />) :
-                    products.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />)
-                }
+            <SideBar
+                products={products}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
+            />
+            <div>
+                <h2>Items ({selectedCategory ? filteredProducts.length : products.length})</h2>
+                <div className={styles.productsDisplayer}>
+                    {selectedCategory ?
+                        filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />) :
+                        products.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />)
+                    }
+                </div>
             </div>
         </div>
     )
