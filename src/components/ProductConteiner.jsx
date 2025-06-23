@@ -2,8 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react";
 import styles from "../css-modules/product-container.module.css"
 
-export default function ProductContainer({ productData, setCart }) {
-    const [clickedHeart, setClickedHeart] = useState(false)
+export default function ProductContainer({ productData, setCart, favourites, setFavourites }) {
     const [amount, setAmount] = useState(1);
 
     function onPlusClick() {
@@ -15,8 +14,18 @@ export default function ProductContainer({ productData, setCart }) {
         setAmount(amount - 1);
     }
 
-    function onHeartClick() {
-        setClickedHeart(clicked => !clicked)
+    function onHeartClick(productData) {
+        if (favourites.includes(productData.id)) {
+            setFavourites(favourites => {
+                const clonedArr = JSON.parse(JSON.stringify(favourites));
+                const index = favourites.findIndex(id => id === productData.id);
+
+                clonedArr.splice(index, 1);
+                return clonedArr;
+            })
+        } else {
+            setFavourites(favourites => [...favourites, productData.id]);
+        }
     }
 
     return (
@@ -29,8 +38,8 @@ export default function ProductContainer({ productData, setCart }) {
                 <p className={styles.category}>{productData.category}</p>
                 <h2 >{"$" + productData.price}</h2>
             </div>
-            <button className={clickedHeart ? styles.clicked : styles.addToFavourites} onClick={onHeartClick}>
-                {clickedHeart ?
+            <button className={favourites.includes(productData.id) ? styles.clicked : styles.addToFavourites} onClick={() => onHeartClick(productData)}>
+                {favourites.includes(productData.id) ?
                     <FontAwesomeIcon icon="fa-solid fa-heart" style={{ color: "#d90808", }} /> :
                     <FontAwesomeIcon icon="fa-regular fa-heart" />
                 }

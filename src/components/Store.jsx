@@ -21,26 +21,34 @@ function SideBar({ products, selectedCategory, setSelectedCategory }) {
     return (
         <div className={styles.sideBar}>
             <h2>Categories</h2>
-            {categories.map(category => {
-                return (
-                    <div key={category} onClick={() => onClickCategory(category)}>
-                        <span className={category === selectedCategory ? styles.clicked : null}>
-                            <svg viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>
-                        </span>
-                        <p>{/home/i.test(category) ? category : category + "s"}</p>
-                    </div>)
-            })}
+            <div className={styles.categories}>
+                {categories.map(category => {
+                    return (
+                        <div key={category} onClick={() => onClickCategory(category)}>
+                            <span className={category === selectedCategory ? styles.clicked : null}>
+                                <svg viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>
+                            </span>
+                            <p>{/home/i.test(category) ? category : category + "s"}</p>
+                        </div>)
+                })}
+            </div>
         </div>
     )
 }
 
 function Store() {
     const [selectedCategory, setSelectedCategory] = useState(null)
-    const { products, error, loading, setCart } = useOutletContext();
+    const { products, error, loading, setCart, favourites, setFavourites, filterByFav } = useOutletContext();
 
     if (loading) return <h1>Loading..</h1>
 
-    const filteredProducts = products.filter(prod => prod.category === selectedCategory);
+    const filteredProducts = products.filter(prod => {
+        if (filterByFav && selectedCategory) {
+            return favourites.includes(prod.id) && prod.category === selectedCategory;
+        }
+        if (filterByFav) return favourites.includes(prod.id)
+        if (selectedCategory) return prod.category === selectedCategory;
+    });
 
     return (
         <div className={styles.container}>
@@ -50,11 +58,11 @@ function Store() {
                 setSelectedCategory={setSelectedCategory}
             />
             <div>
-                <h2>Items ({selectedCategory ? filteredProducts.length : products.length})</h2>
+                <h2 className={filterByFav && styles.favFilter}>Items ({selectedCategory || filterByFav ? filteredProducts.length : products.length})</h2>
                 <div className={styles.productsDisplayer}>
-                    {selectedCategory ?
-                        filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />) :
-                        products.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} />)
+                    {selectedCategory || filterByFav ?
+                        filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} favourites={favourites} setFavourites={setFavourites} />) :
+                        products.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} favourites={favourites} setFavourites={setFavourites} />)
                     }
                 </div>
             </div>

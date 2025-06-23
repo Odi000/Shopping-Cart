@@ -14,16 +14,32 @@ library.add(fas, far, fab)
 
 function HomePage() {
     const [cart, setCart] = useState([]);
+    const [favourites, setFavourites] = useState([]);
+    const [filterByFav, setFilterByFav] = useState(false);
     const { products, error, loading } = useProducts();
+    const [backBtnLocation, setbackBtnLocation] = useState("/");
     const loaction = useLocation();
 
-    console.log(cart)
+    function changeLocation(pathname) {
+        setbackBtnLocation(pathname);
+    }
+
 
     return (
         <div className={styles.homePage}>
-            <NavBar cart={cart}/>
-            {loaction.pathname !== "/" || <Link to="store"><Button>Shop Now</Button></Link>}
-            <Outlet context={{ products, error, loading,cart, setCart }} />
+            <NavBar cart={cart} favourites={favourites} filterByFav={filterByFav} setFilterByFav={setFilterByFav} changeLocation={changeLocation} />
+            {loaction.pathname !== "/" || <Link to="store" onClick={() => changeLocation("store")}><Button>Shop Now</Button></Link>}
+            <Outlet context={{
+                products,
+                error,
+                loading,
+                cart,
+                setCart,
+                favourites,
+                setFavourites,
+                filterByFav,
+                backBtnLocation
+            }} />
         </div>
     )
 }

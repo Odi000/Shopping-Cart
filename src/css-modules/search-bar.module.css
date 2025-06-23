@@ -1,0 +1,36 @@
+.searchBar {
+    background-color: hsla(0, 0%, 0%, 0.12);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2.4rem;
+}
+
+.searchBar input {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 1.8rem;
+    margin-left: .7rem;
+}
+
+.searchBar input:focus {
+    outline: none;
+}
+
+.searchBar svg {
+    height: auto;
+    width: 1.8rem;
+}
+
+@media (max-width: 580px) {
+    .searchBar input {
+        width: 21.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .searchBar input {
+        width: 11.5rem;
+    }
+}

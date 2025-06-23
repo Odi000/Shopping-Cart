@@ -4,23 +4,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchBar from "./SearchBar";
 import styles from "../../css-modules/navbar.module.css";
 
-function NavBar({cart}) {
+function NavBar({ cart, favourites, filterByFav, setFilterByFav, changeLocation }) {
+    function onHeartClick(turnOff) {
+        if(turnOff) {
+            setFilterByFav(false);
+            return;
+        }
+        setFilterByFav(state => !state)
+    }
+
     return (
         <nav className={styles.navBar}>
             <div className={styles.left}>
-                <img src="src/assets/logos/logo-9.png"/>
+                <Link to="/" onClick={() => {changeLocation("/"); onHeartClick(true)}}>
+                    <picture>
+                        <source srcSet="src/assets/logos/logo-10.png" media="(max-width: 800px)" />
+                        <img src="src/assets/logos/logo-9.png" />
+                    </picture>
+                </Link>
                 <div>
-                    <Link to="/">Home</Link>
-                    <Link to="store" >Store</Link>
+                    <Link className={styles.home} to="/" onClick={() => {changeLocation("/"); onHeartClick(true)}}>Home</Link>
+                    <Link className={styles.store} to="store" onClick={() => {changeLocation("store"), onHeartClick(true)}} >Store</Link>
                 </div>
             </div>
             <div className={styles.right}>
                 <SearchBar></SearchBar>
                 <div className={styles.heartNCart}>
-                    <Link className={styles.heart}>
-                        <FavoutiesIcon favoutiesTotal={15}></FavoutiesIcon>
+                    <Link to="store" className={styles.heart} onClick={()=>onHeartClick()}>
+                        <FavoutiesIcon favoutiesTotal={favourites.length} filterByFav={filterByFav}></FavoutiesIcon>
                     </Link>
-                    <Link to={"cart"} className={styles.cart}>
+                    <Link to={"cart"} className={styles.cart} onClick={()=>onHeartClick(true)}>
                         <ShoppingCartIcon shoppingCartTotal={cart.length}></ShoppingCartIcon>
                     </Link>
                 </div>
@@ -29,10 +42,13 @@ function NavBar({cart}) {
     )
 }
 
-function FavoutiesIcon({ favoutiesTotal }) {
+function FavoutiesIcon({ favoutiesTotal, filterByFav }) {
     return (
         <div>
-            <FontAwesomeIcon icon="fa-regular fa-heart" />
+            {filterByFav ?
+                <FontAwesomeIcon icon="fa-solid fa-heart" /> :
+                <FontAwesomeIcon icon="fa-regular fa-heart" />
+            }
             <p>{favoutiesTotal}</p>
         </div>
     )
