@@ -30,7 +30,7 @@ function HomePage() {
             <NavBar cart={cart} favourites={favourites} filterByFav={filterByFav} setFilterByFav={setFilterByFav} changeLocation={changeLocation} />
             {(loaction.pathname !== "/") || (
                 <>
-                    <img className={styles.background} src="/src/assets/background-1.png"/>
+                    <img className={styles.background} src="/assets/background-1.png"/>
                     <div className={styles.header}>
                         <h1>Shop Smart, Live Electric</h1>
                         <p>At ElectroMart, we bring you the best in electronics – from sleek smartphones to powerful laptops and smart home appliances. Enjoy fast delivery, great deals, and tech that fits your life. Start shopping today!</p>
