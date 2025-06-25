@@ -1,3 +1,50 @@
 .homePage {
-padding-top: 8rem;
+    padding-top: 8rem;
+}
+
+.onHomePage {
+    composes: homePage;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(0% 100%, 50% 68%, 81% 34%, 100% 0%, 100% 100%);
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 80%;
+}
+
+.header h1 {
+    font-size: 5.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.header p {
+    font-size: 1.8rem;
+    font-style: italic;
+    text-shadow: 0 0 4px rgba(255, 255, 255);
+
+}
+
+@media (max-width: 900px) {
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .header p {
+        font-size: 1.6rem;
+    }
 }

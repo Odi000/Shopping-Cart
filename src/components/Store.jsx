@@ -58,7 +58,7 @@ function Store() {
                 setSelectedCategory={setSelectedCategory}
             />
             <div>
-                <h2 className={filterByFav && styles.favFilter}>Items ({selectedCategory || filterByFav ? filteredProducts.length : products.length})</h2>
+                <h2 className={filterByFav ? styles.favFilter : null}>Items ({selectedCategory || filterByFav ? filteredProducts.length : products.length})</h2>
                 <div className={styles.productsDisplayer}>
                     {selectedCategory || filterByFav ?
                         filteredProducts.map(prod => <ProductContainer key={prod.id} productData={prod} setCart={setCart} favourites={favourites} setFavourites={setFavourites} />) :

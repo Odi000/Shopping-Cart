@@ -30,10 +30,10 @@ function NavBar({ cart, favourites, filterByFav, setFilterByFav, changeLocation 
             <div className={styles.right}>
                 <SearchBar></SearchBar>
                 <div className={styles.heartNCart}>
-                    <Link to="store" className={styles.heart} onClick={()=>onHeartClick()}>
+                    <Link to="store" className={styles.heart} onClick={()=>{changeLocation("store"), onHeartClick()}}>
                         <FavoutiesIcon favoutiesTotal={favourites.length} filterByFav={filterByFav}></FavoutiesIcon>
                     </Link>
-                    <Link to={"cart"} className={styles.cart} onClick={()=>onHeartClick(true)}>
+                    <Link to={"cart"} className={styles.cart} onClick={() => {changeLocation("store"), onHeartClick(true)}}>
                         <ShoppingCartIcon shoppingCartTotal={cart.length}></ShoppingCartIcon>
                     </Link>
                 </div>

@@ -1,0 +1,58 @@
+.carousel {
+    width: 70rem;
+}
+
+.slideContainer {
+    height: 23rem;
+}
+
+.slide {
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--color-gray);
+    --side-length: 22rem;
+    width: var(--side-length);
+    height: var(--side-length);
+    border-radius: .8rem;
+    backdrop-filter: blur(24px);
+}
+
+.slide img {
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name {
+    position: absolute;
+    font-size: 1.4rem;
+    --spacing: 1.7rem;
+    left: var(--spacing);
+    bottom: var(--spacing);
+}
+
+@media (max-width: 1024px) {
+    .carousel {
+        width: 46.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        width: 36rem;
+    }
+
+    .slideContainer {
+        height: 17rem;
+    }
+
+    .slide {
+        --side-length: 17rem
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+}
