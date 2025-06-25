@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SearchBar from "./SearchBar";
 import styles from "../../css-modules/navbar.module.css";
 
 function NavBar({ cart, favourites, filterByFav, setFilterByFav, changeLocation }) {
     function onHeartClick(turnOff) {
-        if(turnOff) {
+        if (turnOff) {
             setFilterByFav(false);
             return;
         }
@@ -16,24 +15,24 @@ function NavBar({ cart, favourites, filterByFav, setFilterByFav, changeLocation 
     return (
         <nav className={styles.navBar}>
             <div className={styles.left}>
-                <Link to="/" onClick={() => {changeLocation("/"); onHeartClick(true)}}>
+                <Link to="/" onClick={() => { changeLocation("/"); onHeartClick(true) }}>
                     <picture>
-                        <source srcSet="src/assets/logos/logo-10.png" media="(max-width: 800px)" />
-                        <img src="src/assets/logos/logo-9.png" />
+                        <source srcSet="/assets/logos/logo-10.png" media="(max-width: 800px)" />
+                        <img src="/assets/logos/logo-9.png" />
                     </picture>
                 </Link>
                 <div>
-                    <Link className={styles.home} to="/" onClick={() => {changeLocation("/"); onHeartClick(true)}}>Home</Link>
-                    <Link className={styles.store} to="store" onClick={() => {changeLocation("store"), onHeartClick(true)}} >Store</Link>
+                    <Link className={styles.home} to="/" onClick={() => { changeLocation("/"); onHeartClick(true) }}>Home</Link>
+                    <Link className={styles.store} to="store" onClick={() => { changeLocation("store"), onHeartClick(true) }} >Store</Link>
                 </div>
             </div>
             <div className={styles.right}>
                 <SearchBar></SearchBar>
                 <div className={styles.heartNCart}>
-                    <Link to="store" className={styles.heart} onClick={()=>{changeLocation("store"), onHeartClick()}}>
+                    <Link to="store" className={styles.heart} onClick={() => { changeLocation("store"), onHeartClick() }}>
                         <FavoutiesIcon favoutiesTotal={favourites.length} filterByFav={filterByFav}></FavoutiesIcon>
                     </Link>
-                    <Link to={"cart"} className={styles.cart} onClick={() => {changeLocation("store"), onHeartClick(true)}}>
+                    <Link to={"cart"} className={styles.cart} onClick={() => { changeLocation("store"), onHeartClick(true) }}>
                         <ShoppingCartIcon shoppingCartTotal={cart.length}></ShoppingCartIcon>
                     </Link>
                 </div>

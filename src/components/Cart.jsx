@@ -129,8 +129,6 @@ function Checkout({ sum, setCart }) {
     const [checkout, setCheckout] = useState(false);
     const [purchaseCompleted, setPurchaseCompleted] = useState(false);
     const loadingTime = Math.floor(Math.random() * 900 + 900);
-    console.log(loadingTime)
-
 
     useEffect(() => {
         if (!checkout) return;
