@@ -3,18 +3,19 @@
 }
 
 .slideContainer {
-    height: 23rem;
+    height: 15rem;
 }
 
 .slide {
     position: relative;
     box-sizing: border-box;
-    background-color: var(--color-gray);
-    --side-length: 22rem;
+    background-color: transparent;
+    --side-length: 15rem;
     width: var(--side-length);
     height: var(--side-length);
     border-radius: .8rem;
-    backdrop-filter: blur(24px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .slide img {
@@ -35,7 +36,7 @@
 
 @media (max-width: 1024px) {
     .carousel {
-        width: 46.6rem;
+        width: 52rem;
     }
 }
 
@@ -54,5 +55,15 @@
 
     .name {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .carousel {
+        margin-top: 7rem;
+    }
+
+    .slide {
+        background-color: rgba(0, 0, 0, 0.35);
     }
 }
