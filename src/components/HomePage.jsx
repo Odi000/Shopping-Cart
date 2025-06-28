@@ -30,12 +30,10 @@ function HomePage() {
             <NavBar cart={cart} favourites={favourites} filterByFav={filterByFav} setFilterByFav={setFilterByFav} changeLocation={changeLocation} />
             {(loaction.pathname !== "/") || (
                 <>
-                <div className={styles.background}>
-                    <img src="/assets/background-8.jpg"/>
-                </div>
+                    <img className={styles.background} src="/assets/background-1.png"/>
                     <div className={styles.header}>
                         <h1>Shop Smart, Live Electric</h1>
-                        {/* <p>At ElectroMart, we bring you the best in electronics – from sleek smartphones to powerful laptops and smart home appliances. Enjoy fast delivery, great deals, and tech that fits your life. Start shopping today!</p> */}
+                        <p>At ElectroMart, we bring you the best in electronics – from sleek smartphones to powerful laptops and smart home appliances. Enjoy fast delivery, great deals, and tech that fits your life. Start shopping today!</p>
                     </div>
                     <Link to="store" onClick={() => changeLocation("store")}><Button>Shop Now</Button></Link>
                     <Carousel products={products} loading={loading}></Carousel>

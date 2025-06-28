@@ -41,7 +41,7 @@ button {
     cursor: pointer;
 }
 
-/* .slick-dots {
+.slick-dots {
     background-color: var(--color-gray);
     backdrop-filter: blur(24px);
     width: fit-content;
@@ -49,5 +49,5 @@ button {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 1rem;
-} */
+}
 
