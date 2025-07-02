@@ -1,6 +1,7 @@
 .productContainer {
     position: relative;
     background-color: var(--color-gray);
+    background-color: rgba(235, 235, 235, 0.72);
     border-radius: .8rem;
     aspect-ratio: 9/11;
 }
@@ -30,6 +31,7 @@
 
 .category {
     color: var(--color-gray-2);
+    color: rgb(85, 85, 85);
 }
 
 .addToCart {

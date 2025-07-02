@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1.4rem;
     color: #424447;
     font-size: 1.2rem;
@@ -15,11 +15,13 @@
 
 .homepage {
     composes: footer;
+    position: static;
     width: fit-content;
     background-color: var(--color-gray);
     backdrop-filter: blur(12px);
     border-top-right-radius: .8rem;
     border-top-left-radius: .8rem;
+    margin-top: auto;
 }
 
 .footer p {
@@ -37,10 +39,10 @@
 }
 
 .footer a:visited {
-    color: #424447;   
+    color: #424447;
 }
 
-@media (max-width: 635px) {
+@media (max-width: 675px) {
 
     .footer>:nth-child(5),
     .footer>:nth-child(6) {
@@ -52,6 +54,7 @@
     .footer {
         gap: .9rem;
     }
+
     .footer>:nth-child(2) {
         display: none;
     }

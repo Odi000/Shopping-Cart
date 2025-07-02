@@ -39,7 +39,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
     .carousel {
         width: 36rem;
     }

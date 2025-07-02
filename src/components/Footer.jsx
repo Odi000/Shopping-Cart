@@ -4,7 +4,7 @@ import styles from "../css-modules/footer.module.css";
 export default function Footer({ backBtnLocation }) {
 
     return (
-        <footer className={backBtnLocation === "/" ? styles.homepage : styles.footer}>
+        <footer className={backBtnLocation.current === "/" ? styles.homepage : styles.footer}>
             <p>ElectroMart © 2025</p>
             <p>Privacy & Legal</p>
             <p>Product Recalls</p>

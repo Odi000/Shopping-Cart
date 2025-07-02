@@ -10,21 +10,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    min-height: 90vh;
 }
 
+.onHomePage>*:not(img):not(footer):not(nav) {
+    margin-bottom: 3.6rem;
+}
+
+.blur,
 .background {
-    position: absolute;
+    position: fixed;
     top: 0;
-    z-index: -1;
-    clip-path: polygon(0% 100%, 50% 68%, 81% 34%, 100% 0%, 100% 100%);
-    object-fit: cover;
     width: 100vw;
     height: 100vh;
 }
 
+.blur {
+    z-index: -1;
+    backdrop-filter: blur(2px);
+}
+
+.background {
+    z-index: -2;
+    clip-path: polygon(0% 100%, 50% 68%, 81% 34%, 100% 0%, 100% 100%);
+    object-fit: cover;
+}
+
 .header {
+    margin-top: 2.4rem;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     width: 80%;
@@ -49,5 +61,19 @@
 
     .header p {
         font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-top: 1.4rem;
+    }
+
+    .header h1 {
+        font-size: 3.6rem;
+    }
+
+    .header p {
+        font-size: 1.4rem;
     }
 }

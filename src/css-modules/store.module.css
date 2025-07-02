@@ -125,7 +125,7 @@ span.clicked {
 
 @media (max-width: 590px) {
     .container {
-        padding: 2.5rem 1.2rem 2rem;
+        padding: 2.5rem 1.2rem 3rem;
     }
 
     .sideBar {

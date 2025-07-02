@@ -19,19 +19,28 @@ function HomePage() {
     const [favourites, setFavourites] = useState([]);
     const [filterByFav, setFilterByFav] = useState(false);
     const { products, error, loading } = useProducts();
-    const [backBtnLocation, setbackBtnLocation] = useState("/");
+    const [backBtnLocation, setbackBtnLocation] = useState({ previous: "/", current: "/" });
     const loaction = useLocation();
 
     function changeLocation(pathname) {
-        setbackBtnLocation(pathname);
+        setbackBtnLocation(state => ({ previous: state.current, current: pathname }));
     }
 
     return (
-        <div className={backBtnLocation === "/" ? styles.onHomePage : styles.homePage}>
+        <div className={backBtnLocation.current === "/" ? styles.onHomePage : styles.homePage}>
             <NavBar cart={cart} favourites={favourites} filterByFav={filterByFav} setFilterByFav={setFilterByFav} changeLocation={changeLocation} />
+            {backBtnLocation.current === "/" ?
+                <>
+                    <img className={styles.background} src="/assets/background-1.png" />
+                </>
+                : backBtnLocation.current === "store" ?
+                    <>
+                        <div className={styles.blur}></div>
+                        <img className={styles.background} src="/assets/background-1.png" />
+                    </> : undefined
+            }
             {(loaction.pathname !== "/") || (
                 <>
-                    <img className={styles.background} src="/assets/background-1.png"/>
                     <div className={styles.header}>
                         <h1>Shop Smart, Live Electric</h1>
                         <p>At ElectroMart, we bring you the best in electronics – from sleek smartphones to powerful laptops and smart home appliances. Enjoy fast delivery, great deals, and tech that fits your life. Start shopping today!</p>
@@ -49,7 +58,8 @@ function HomePage() {
                 favourites,
                 setFavourites,
                 filterByFav,
-                backBtnLocation
+                backBtnLocation,
+                changeLocation
             }} />
             <Footer backBtnLocation={backBtnLocation}></Footer>
         </div>

@@ -32,7 +32,7 @@ function NavBar({ cart, favourites, filterByFav, setFilterByFav, changeLocation 
                     <Link to="store" className={styles.heart} onClick={() => { changeLocation("store"), onHeartClick() }}>
                         <FavoutiesIcon favoutiesTotal={favourites.length} filterByFav={filterByFav}></FavoutiesIcon>
                     </Link>
-                    <Link to={"cart"} className={styles.cart} onClick={() => { changeLocation("store"), onHeartClick(true) }}>
+                    <Link to={"cart"} className={styles.cart} onClick={() => { changeLocation("cart"), onHeartClick(true) }}>
                         <ShoppingCartIcon cart={cart}></ShoppingCartIcon>
                     </Link>
                 </div>
@@ -54,8 +54,6 @@ function FavoutiesIcon({ favoutiesTotal, filterByFav }) {
 }
 
 function ShoppingCartIcon({ cart }) {
-    console.log(cart)
-
     const totalItems = cart.reduce((accumulator, product) => {
         return accumulator + 1 * product.amount;
     }, 0);

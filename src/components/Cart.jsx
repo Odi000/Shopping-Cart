@@ -4,14 +4,14 @@ import styles from "../css-modules/cart.module.css"
 import { useState, useEffect } from "react";
 
 export default function Cart() {
-    const { products, cart, setCart, backBtnLocation } = useOutletContext();
+    const { products, cart, setCart, backBtnLocation, changeLocation } = useOutletContext();
     const productsInCart = filterOutProductsInCart(cart, products);
 
 
     return (
         <div className={styles.container}>
             <div className={styles.cartElements}>
-                <Link to={"../" + backBtnLocation}>
+                <Link to={"../" + backBtnLocation.previous} onClick={() => changeLocation(backBtnLocation.previous)}>
                     <button className={styles.back}>
                         <FontAwesomeIcon icon="fa-solid fa-arrow-left" />
                     </button>
