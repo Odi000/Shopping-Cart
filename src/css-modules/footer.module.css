@@ -36,6 +36,10 @@
     font-weight: 500;
 }
 
+.footer a:visited {
+    color: #424447;   
+}
+
 @media (max-width: 635px) {
 
     .footer>:nth-child(5),
