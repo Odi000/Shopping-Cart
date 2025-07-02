@@ -14,7 +14,7 @@
     width: var(--side-length);
     height: var(--side-length);
     border-radius: .8rem;
-    backdrop-filter: blur(24px);
+    backdrop-filter: blur(12px);
 }
 
 .slide img {

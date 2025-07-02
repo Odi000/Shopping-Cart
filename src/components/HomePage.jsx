@@ -9,6 +9,7 @@ import styles from "../css-modules/home-page.module.css"
 import NavBar from "./navbar/NavBar";
 import Button from "./button";
 import Carousel from "./Carousel";
+import Footer from "./Footer";
 
 
 library.add(fas, far, fab);
@@ -50,6 +51,7 @@ function HomePage() {
                 filterByFav,
                 backBtnLocation
             }} />
+            <Footer backBtnLocation={backBtnLocation}></Footer>
         </div>
     )
 }
