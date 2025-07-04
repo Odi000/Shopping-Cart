@@ -43,18 +43,15 @@
     right: 2rem;
 }
 
-.quantity button,
-.add {
-    transition: scale 0.05s, background 0.05s;
+.quantity button {
+    transition: scale 0.05s;
 }
 
-.quantity button:hover,
-.add:hover {
+.quantity button:hover {
     scale: 1.1;
 }
 
-.quantity button:active,
-.add:active {
+.quantity button:active {
     scale: 1;
 }
 
@@ -65,10 +62,15 @@
     border: solid 1px #4A4A4A;
     padding: 0.2rem;
     border-radius: .3rem;
+    fill: #2d4433;
+}
+
+.add:hover {
+    outline: 1px solid #4A4A4A;
 }
 
 .add:active {
-    background-color: #4798FF;
+    scale: .9;
 }
 
 .quantity {
@@ -104,7 +106,7 @@
     transition: opacity .24s, scale .16s;
 }
 
-.clicked{
+.clicked {
     composes: addToFavourites;
     opacity: 1;
 }
